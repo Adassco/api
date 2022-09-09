@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(
+        90deg,
+        #02aab0,
+        #00cdac
+    );
+    height: 100vh;
+}
+
+
+.clock {
+    font-family: 'Roboto Slab', serif;
+    color: wheat;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 70px
+}
+
+.clock:hover {
+    color: orangered;
+    cursor: no-drop;
+}
