@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Day of the week</title>
+        <meta name="description" content="js">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(
+        90deg,
+        #cc2b5e,
+        #753a88
+    );
+    font-family: 'Roboto Slab', serif;
+    color: greenyellow;
+}
+
+h1 {
+    text-align: center;
+}
+
+div.container {
+    padding-top: 15%;
+}
+
+div.date {
+    text-align: center;
+    font-size: larger;
+    padding-top: 2%;
+}
+
+button {
+    background-color: #753a88;
+    color: greenyellow;
+    width: 130px;
+    height: 50px;
+}
+
+button:hover {
+    background-color: #cc2b5e;
+}
+
+#showDate {
+    margin-top: 1.1%;
+}
+</style>
+
+
+
+
+    </head>
+    <body>
+
+        <div class="container">
+            <h1>What's the time and day?</h1>
+        </div> 
+
+    <div class="date">    
+        <button type="button" onclick="displayDate()">Click me!</button>
+        <p id="showDate"></p>
+    </div>
+        
+        <script>
+            function displayDate() {document.getElementById("showDate").innerHTML = Date();}
+        </script>
+    </body>
+</html>

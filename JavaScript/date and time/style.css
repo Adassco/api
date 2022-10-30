@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(
+        90deg,
+        #cc2b5e,
+        #753a88
+    );
+    font-family: 'Roboto Slab', serif;
+    color: greenyellow;
+}
+
+h1 {
+    text-align: center;
+}
+
+div.container {
+    padding-top: 15%;
+}
+
+div.date {
+    text-align: center;
+    font-size: larger;
+    padding-top: 2%;
+}
+
+button {
+    background-color: #753a88;
+    color: greenyellow;
+    width: 130px;
+    height: 50px;
+}
+
+button:hover {
+    background-color: #cc2b5e;
+}
+
+#showDate {
+    margin-top: 1.1%;
+}
