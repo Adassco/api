@@ -1,0 +1,282 @@
+:root {
+    --fontColor: wheat;
+    --BgColor1: #614385;
+    --BgColor2: #516395;
+    --BgColor3: #252525;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+    background: linear-gradient(
+        45deg,
+        var(--BgColor1),
+        var(--BgColor2)
+    );
+    color: wheat;
+    height: 100vh;
+}
+
+/* LOGO -------------------------------------*/ 
+
+#logo {
+    position: absolute;
+    display: inline-block;
+    top: 1.2%;
+    left: 48%;
+    text-align: center;
+    opacity: 0.92;
+    z-index: 3;
+}
+
+#logo:hover {
+    animation: pulse 0.5s ease-in infinite;
+    opacity: 1;
+}
+
+#logo a {
+    text-decoration: none;
+    color: wheat;
+    font-size: 1.5rem;
+}
+
+
+/* NavBar --------------------------------------*/ 
+#nav_Bar {
+    position: absolute;
+    display: inline-block;
+    text-transform: uppercase;
+    right: 12%;
+    top: 1.5%;
+    z-index: 3;
+}
+
+#nav_Bar li {
+    display: inline;
+    padding: 0px 15px;
+}
+
+#nav_Bar a {
+    font-size: 1.3rem;
+    opacity: 0.75;
+}
+
+a:hover {
+    color: whitesmoke;
+}
+
+
+#space {
+    font-size: 1rem;
+}
+
+/* GitHubIcon ------------------------- */
+
+#GhIcon, #TwIcon {
+    position: absolute;
+    font-size: 34px;
+    top: 1.2%;
+    left: 12%;
+    opacity: 0.75;
+    z-index: 3;
+}
+
+#TwIcon {
+    left: 14%;
+}
+
+#GhIcon:hover, #TwIcon:hover {
+    animation: pop 0.3s linear 1;
+    opacity: 1;
+}
+
+a {
+    text-decoration: none;
+    color: wheat;
+}
+
+
+@keyframes pop{
+    50%  {transform: scale(1.2);}
+  }
+
+/* NavBar Background ----------------- */
+
+#NavLogoBG {
+    background-color: var(--BgColor3);
+    opacity: 0.6;
+    position: absolute;
+    width: 80vw;
+    height: 75px;
+    left: 10%;
+    border-radius: 10px;
+    z-index: 1;
+    top: 0.1%;
+}
+
+/* ToTop Button ----------------------------------*/
+
+#toTopBtn {
+    position: absolute;
+    bottom: 4%;
+    right: 3%;
+    height: 58px;
+    width: 50px;
+    border-radius: 8px;
+    font-size: 25px;
+    background-color: var(--BgColor3);
+    color: wheat;
+    border: none;
+}
+
+#toTopBtn:hover {
+    animation: pulse 0.5s ease-in infinite;
+}
+
+@keyframes pulse{
+    25%  {transform: scale(0.9);}
+    75%  {transform: scale(1.1);}
+}
+
+
+/* aboutMe background ----------------------------- */
+#aboutMe_bg {
+    position: absolute;
+    background-color: var(--BgColor3);
+
+    height: 28vh;
+    width: 76vw;
+    opacity: 0.6;
+    left: 12%;
+    top: 8%;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+/* aboutMe Info --------------------------------- */
+
+#aboutMe_info {
+    z-index: 3;
+}
+
+#aboutMe_H1 {
+    position: absolute;
+    top: 12%;
+    left: 15%;
+    z-index: 3;
+    border-bottom: 6px solid #614385;
+    padding: 0 5px;
+}
+
+#aboutMe_H2 {
+    position: absolute;
+    top: 16%;
+    left: 15%;
+    z-index: 3;
+    opacity: 0.9;
+    word-spacing: 10px;
+    padding: 0 5px;
+    font-size: 1.25em;
+}
+
+#aboutMe_h2 {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    z-index: 3;
+    opacity: 0.9;
+    word-spacing: 10px;
+    padding: 0 5px;
+    font-size: 1.25em;
+}
+
+#aboutMe_p {
+    position: absolute;
+    top: 28%;
+    left: 15%;
+    z-index: 3;
+    opacity: 0.9;
+    word-spacing: 10px;
+    padding: 0 5px;
+    font-size: 1.25em;
+}
+
+
+/* SOURCES ------------------------------------------ */
+
+#sources_bg {
+    background-color: var(--BgColor3);
+    border-radius: 8px;
+
+    position: absolute;
+    opacity: 0.6;
+    width: 76vw;
+    height: 24vh;
+    top: 42%;
+    left: 12%;
+    z-index: 1;
+}
+
+#sources_h1 {
+    position: absolute;
+    top: 45%;
+    left: 15%;
+    z-index: 1;
+}
+
+#h1_answ {
+    position: absolute;
+    top: 48%;
+    left: 15%;
+    z-index: 1;
+    opacity: 0.92;
+    font-size: 16px;
+    max-width: 72vw;
+}
+
+#sources_h3 {
+    position: absolute;
+    top: 56%;
+    left: 15%;
+    z-index: 1;
+    font-size: 1.25em;
+}
+
+#h3_answ {
+    position: absolute;
+    top: 58%;
+    left: 15%;
+    z-index: 1;
+    opacity: 0.92;
+    font-size: 1.25em;
+}
+
+#h3_answ li {
+    list-style-type: none;
+}
+
+/* FOOTER */
+
+footer {
+    height: 20vh;
+}
+
+#foot_bg {
+    position: absolute;
+    height: 3vh;
+    width: 100%;
+    bottom: 0;
+    background-color: var(--BgColor3);
+    opacity: 1;
+}
+
+#copy {
+    position: absolute;
+    bottom: 1%;
+    left: 48%;
+}
