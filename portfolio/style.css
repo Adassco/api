@@ -1,0 +1,331 @@
+:root {
+    --fontColor: wheat;
+    --BgColor1: #614385;
+    --BgColor2: #516395;
+    --BgColor3: #252525;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+    background: linear-gradient(
+        45deg,
+        var(--BgColor1),
+        var(--BgColor2)
+    );
+    color: wheat;
+    height: 100vh;
+    font-size: 16px;
+}
+
+/* LOGO --------------------------------- */
+#logo_bg {
+    position: absolute;
+    left: 4.2vw;
+    top: 2.5vw;
+    width: 90vw;
+    height: 9vw;
+    background-color: var(--BgColor3);
+    opacity: 0.6;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+#logo_text {
+    position: absolute;
+    top: 4.3vw;
+    left: 6vw;
+    font-size: 1rem;
+    text-align: center;
+    opacity: 0.94;
+    z-index: 3;
+}
+
+
+/* GitHubIcon ------------------------- */
+
+#GhIcon, #TwIcon {
+    position: absolute;
+    top: 4.3vw;
+    right: 7.5vw;
+    opacity: 0.75;
+    z-index: 3;
+    font-size: 1.2rem;
+}
+
+#TwIcon {
+    right: 14vw;
+}
+
+#GhIcon:hover, #TwIcon:hover {
+    animation: pop 0.3s linear 1;
+    opacity: 1;
+}
+
+#TwIcon:hover {
+    color: #00acee;
+}
+
+a {
+    text-decoration: none;
+    color: wheat;
+}
+
+
+@keyframes pop{
+    50%  {transform: scale(1.2);}
+
+}
+
+/* NAVBAR ------------------------------------- */
+#navBar_main {
+    display: none;
+}
+
+/* InfoME --------------------------------------- */
+#infoMe_bg {
+    position: absolute;
+    top: 8vh;
+    left: 4.2vw;
+
+    background-color: var(--BgColor3);
+    width: 90vw;
+    height: 36vh;
+    opacity: 0.6;
+    z-index: 1;
+    border-radius: 8px;
+}
+
+#infoMe_why_question1 {
+    position: absolute;
+    top: 10vh;
+    left: 5vw;
+    font-size: 1rem;
+    max-width: 340px;
+    opacity: 0.92;
+    z-index: 3;
+}
+
+#infoMe_answer1 {
+    position: absolute;
+    top: 16vh;
+    left: 5vw;
+    max-width: 340px;
+    font-size: 0.75rem;
+    z-index: 1;
+    opacity: 0.8;
+}
+
+#infoMe_why_question2 {
+    position: absolute;
+    top: 30vh;
+    left: 5vw;
+    font-size: 1rem;
+    max-width: 340px;
+    opacity: 0.92;
+    z-index: 3;
+}
+
+#infoMe_answer2 {
+    position: absolute;
+    top: 33vh;
+    left: 5vw;
+    max-width: 340px;
+    font-size: 0.75rem;
+    z-index: 1;
+    opacity: 0.8;
+}
+
+
+/* Knowledge ------------------------------------- */
+#knowledge_bg {
+    position: absolute;
+    top: 45vh;
+    left: 4.2vw;
+
+    background-color: var(--BgColor3);
+    width: 90vw;
+    height: 36vh;
+    opacity: 0.6;
+    z-index: 1;
+    border-radius: 8px;
+}
+
+#k_Q1 {
+    position: absolute;
+    top: 48vh;
+    left: 5vw;
+    font-size: 1rem;
+    max-width: 340px;
+    opacity: 0.92;
+    z-index: 3;
+}
+
+#k_A1 {
+    position: absolute;
+    top: 52vh;
+    left: 5vw;
+    max-width: 340px;
+    font-size: 0.75rem;
+    z-index: 1;
+    opacity: 0.8;
+}
+
+#k_Q2 {
+    position: absolute;
+    top: 60vh;
+    left: 5vw;
+    font-size: 1rem;
+    max-width: 340px;
+    opacity: 0.92;
+    z-index: 3;
+}
+
+#k_A2 {
+    position: absolute;
+    top: 64vh;
+    left: 5vw;
+    max-width: 340px;
+    font-size: 0.75rem;
+    z-index: 1;
+    opacity: 0.8;
+}
+
+/* ToTop Button ----------------------------------*/
+#toTopBtn {
+    display: none;
+}
+
+/* footer */ 
+
+#footer_bg {
+    position: absolute;
+    bottom: 1vh;
+    left: 4.2vw;
+
+    background-color: var(--BgColor3);
+    width: 90vw;
+    height: 5vh;
+    opacity: 0.6;
+    z-index: 1;
+    border-radius: 8px;
+}
+
+#footer_contact {
+    position: absolute;
+    bottom: 2.5vh;
+    left: 40vw;
+    font-size: 0.7rem;
+    text-align: center;
+    z-index: 3;
+}
+
+/* @media ---------------------------------*/
+
+@media screen and (min-width: 768px) {
+    #logo_bg {
+        height: 5.5vh;
+    }
+
+    #logo_text {
+        font-size: 1.5555rem;
+    }
+
+    #GhIcon, #TwIcon {
+        font-size: 1.7rem;
+        right: 10vw;
+    }
+
+    #TwIcon {
+        right: 15vw;
+    }
+
+    #infoMe_answer1 {
+        max-width: 680px;
+        font-size: 1rem;
+    }  
+    
+    #infoMe_answer2 {
+        max-width: 680px;
+        font-size: 1rem;
+    }   
+
+    #k_A1 {
+        max-width: 680px;
+        font-size: 1rem;
+    }
+
+    #k_A2 {
+        max-width: 680px;
+        font-size: 1rem;
+    }
+
+    #footer_contact {
+        font-size: 1rem;
+        left: 32vh;
+    }
+}
+
+
+@media screen and (min-width: 1000px){
+    #toTopBtn {
+        position: absolute;
+        bottom: 1vh;
+        right: 4vw;
+        height: 10rem;
+        width: 50px;
+        border-radius: 8px;
+        font-size: 25px;
+        background-color: var(--BgColor3);
+        color: wheat;
+        border: none;
+    }
+    
+    #toTopBtn:hover {
+        animation: pulse 0.5s ease-in infinite;
+    }
+    
+    @keyframes pulse{
+        25%  {transform: scale(0.9);}
+        75%  {transform: scale(1.1);}
+    }
+
+    #infoMe_answer1 {
+        max-width: 90vw;
+    }
+
+    #infoMe_answer2 {
+        max-width: 85vw;
+    }
+
+    #k_A1 {
+        max-width: 85vw;
+    }
+
+    #k_A2 {
+        max-width: 85vw;
+    }
+
+    #footer_bg {
+        height: 4vh;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    #logo_bg {
+        top: 1vh;
+    }
+    #logo_text, #GhIcon, #TwIcon {
+        top: 2.2vh;
+    }
+
+    #footer_contact {
+        left: 48vw;
+    }
+}
+    
