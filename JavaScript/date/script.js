@@ -1,4 +1,3 @@
-
 window.onload = function() {
     var info = document.getElementById("info");
     var weekday = ["Sunday","Monday","Tuesday","Wednesday",
