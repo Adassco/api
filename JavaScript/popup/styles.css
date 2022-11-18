@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #252525;
+    color: wheat;
+}
+
+#myBtn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #252525;
+    background: linear-gradient(
+        45deg,
+        #2193b0,
+        #6dd5ed
+    );
+
+    width: 200px;
+    height: 200px;
+    font-size: 25px;
+    border-radius: 100px;
+    z-index: 3;
+}
+
+#myBtn:hover {
+    cursor: pointer;
+}
+
+
+#myBtn2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #252525;
+    background: linear-gradient(
+        45deg,
+        #bdc3c7,
+        #2c3e50
+    );
+    display: none;
+
+    width: 200px;
+    height: 200px;
+    font-size: 25px;
+    border-radius: 100px;
+    z-index: 4;
+}
