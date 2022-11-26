@@ -1,0 +1,120 @@
+:root {
+    --cc1: #2193b0;
+    --cc2: #6dd5ed;
+    --cc3: yellowgreen;
+    --bg: #252525;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: black;
+    font-size: 10px;
+    font-family: 'Roboto Slab', serif;
+    height: 100vh;
+    background-color: var(--bg);
+}
+
+/* LOGO */
+
+#logo {
+    font-size: 50px;
+    text-align: center;
+    width: 100%;
+    background-image: url(/jpeg/florian-olivo-4hbJ-eymZ1o-unsplash.jpg);
+    background-size: 100vw;
+    color: wheat;
+    line-height: 15vh;
+    height: 15vh;
+    font-size: 10em;
+}
+
+/* NAV BAR */
+
+#navBar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding-top: 1%;
+}
+
+.navSquare {
+    width: 125px;
+    height: 75px;
+    background-color: var(--cc3);
+    text-align: center; 
+    line-height: 75px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    opacity: 0.68;
+}
+
+.navSquare:hover {
+    background-color: var(--cc2);
+    font-size: x-large;
+    opacity: 1;
+}
+
+a {
+    text-decoration: none;
+    color: var(--font1);
+}
+
+
+/* ABOUT */
+
+#About {
+    display: flex;
+    flex-direction: row;
+    color: wheat;
+    font-size: 1.1rem;
+    text-align: center;
+    padding-top: 1.5%;
+    width: 100vw;
+    justify-content: space-evenly;
+}
+
+#aboutSectionOne, #aboutSectionTwo {
+    max-width: 40vw;
+    border: var(--cc2) dotted 3px;
+    opacity: 0.92;
+}
+
+.h1About, .h2About {
+    color: var(--cc1);
+} 
+
+/* CONTACT */
+#contactSec {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+#contactBtn {
+    background-color: gold;
+    font-size: 32px;
+    border-radius: 10px;
+    height: 55px;
+    width: 170px;
+}
+
+#hiddenDiv {
+    display: none;
+    color: yellowgreen;
+    font-size: 27px;
+    flex-wrap: wrap;
+}
+
+li {
+    text-align: center;
+    list-style-type: none;
+}
+
+.contactDet {
+    color: aqua;
+}
